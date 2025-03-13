@@ -24,4 +24,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Install Jest globally  # Install Jest global
+      - name: Install Jest globally  # Install Jest globally in the CI environment
+        run: npm install -g jest
+
+      - name: Run Tests
+        run: npm test
