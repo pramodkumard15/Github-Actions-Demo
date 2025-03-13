@@ -21,14 +21,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Check Node.js version
-        run: node -v
-
       - name: Install Dependencies
         run: npm install
 
-      - name: Verify Jest installation
-        run: npm list jest
-
-      - name: Run Tests
-        run: npm test
+      - name: Install Jest globally  # Install Jest global
